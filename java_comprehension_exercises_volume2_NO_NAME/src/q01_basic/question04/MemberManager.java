@@ -6,8 +6,13 @@ class MemberManager {
 	 * インスタンス化の禁止
 	 */
 	private MemberManager() {
+
 	}
 
 	//TODO showAllMembersメソッドを実装する
-
+	public static void showAllMembers(Member[] members) {
+		for (Member allMembers : members) {
+			allMembers.showMember();
+		}
+	}
 }
