@@ -17,17 +17,18 @@ public class SystemMain06 {
 		//TODO ここから実装する
 
 		try {
+			System.out.print("input id>>");
 			inputId = cr.inputNumber();
+			System.out.print("input password>>");
 			inputPassword = cr.inputString();
+			Member member = new Member(inputId, inputPassword, name, age, rank);
+			member.showMember();
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (NumberFormatException e) {
 			System.out.println("error!");
+			e.printStackTrace();
 		}
-
-		Member member = new Member(inputId, inputPassword, name, age, rank);
-
-		member.showMember();
 
 	}
 

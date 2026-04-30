@@ -18,7 +18,7 @@ class ConsoleReader {
 	public String inputString() throws IOException {
 		//TODO ここから実装する
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.print("input password>>");
+
 		return br.readLine();
 	}
 
@@ -32,7 +32,7 @@ class ConsoleReader {
 	public int inputNumber() throws IOException, NumberFormatException {
 		//TODO ここから実装する
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.print("input id>>");
+
 		return Integer.parseInt(br.readLine());
 
 	}
